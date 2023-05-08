@@ -1,0 +1,21 @@
+.expense-item {
+  display: flex;
+  height: 10vh;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  border: 1px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12%;
+}
+
+@media (min-width:1250px) {
+  .expense-item {
+    height: 120px;
+    width: 50%;
+    font-size: 2rem;
+  }
+}

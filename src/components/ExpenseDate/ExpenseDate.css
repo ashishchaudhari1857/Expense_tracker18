@@ -1,0 +1,23 @@
+.expense-date {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 40%;
+    margin-right: auto;
+    max-width: 250px;
+    text-align: end;
+    border: 1px solid black;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 12%;
+  }
+  @media (min-width: 1250px) {
+    .expense-date {
+      height: 120px;
+      width: 35%;
+      font-size: 1.5rem;
+    }
+  }

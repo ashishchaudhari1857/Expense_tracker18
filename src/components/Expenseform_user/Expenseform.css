@@ -1,0 +1,53 @@
+.my-form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 3rem;
+    position: absolute;
+    top:0%;
+    box-shadow: 2px 2px 2px red;
+    border: 2px solid black;
+    /* align-items: center; */  
+    background-color: skyblue; 
+}
+btn ,label{
+    font-size: 2vw;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input{
+    padding-bottom: 0.5rem;
+    font-size: 2.5vw;
+    border:2px solid black;
+    text-align: center;
+    margin-bottom: 5px;
+    margin: auto;
+    width: 70%;
+    max-width: 300px;
+
+
+}
+@media (min-width: 768px) {
+    .my-form {
+      width: 50%;
+      margin-top: 5rem;
+    }
+  
+    .my-form label, .my-form button {
+      font-size: 1.5rem;
+    }
+  
+    .my-form input {
+      font-size: 2rem;
+    }
+  }
+  @media  (max-width:1675px)
+    {
+        .my-form{
+            position: relative;
+            margin: auto;
+        }
+
+  }
