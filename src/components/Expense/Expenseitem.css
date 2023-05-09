@@ -1,6 +1,6 @@
 .expense-item {
   display: flex;
-  height: 10vh;
+  height: 8vh;
   width: 90%;
   max-width: 500px;
   text-align: center;
@@ -10,11 +10,13 @@
   justify-content: center;
   align-items: center;
   border-radius: 12%;
+  background-color:   #373737;
+  color: antiquewhite;
 }
 
 @media (min-width:1250px) {
   .expense-item {
-    height: 120px;
+    height: 90px;
     width: 50%;
     font-size: 2rem;
   }

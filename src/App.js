@@ -1,13 +1,10 @@
 import { useState } from "react";
-import "./App.css";
-import { User } from "./List_User/User";
-import {Filteryear} from './components/FilterYear';
-// import { Expenseform } from "./components/Expenseform_user/Expenseform";
-import { Add_New } from "./components/CRUD/Add_New";
+import Expensense from "./Expensense" ;
+import './App.css'
 const App = () => {
   const [Users, setUsers] = useState([
-    { 
-      date: new Date(202, 12, 22), // use new Date() constructor instead of toLocaleDateString()
+    {
+      date: new Date(2002, 12, 22), // use new Date() constructor instead of toLocaleDateString()
       amount: 150,
       purpose: "education",
     },
@@ -31,41 +28,10 @@ const App = () => {
     setUsers(updatedUsers); // update the state with the new array
     console.log(updatedUsers);
   };
- const [selected ,setselected]=useState("2001")
-  //   const addExpenseHandler =(event)=>{
-  //     event.preventDefault();
-  //     const newExpense = {
-  //       date: event.target.date.value,
-  //       purpose: event.target.purpose.value,
-  //       amount: event.target.price.value,
-  //     };
-  //     console.log("hey")
-  //     console.log(newExpense)
-  //     setUsers([...Users,newExpense ])
-  //     event.target.reset();
-  //  }
-const setyear=(event)=>{
-  setselected(event.target.value);
-}
-
   
-   const filterdata= Users.filter((data ,i) =>{
-    if (data.date) {
-      return (data.date.getFullYear().toString() === selected);
-  }
-   })
-  //  if want all the data on screen then call Users.map instead of filterdata
-   const expenseItems = filterdata.map((data, i) => {
-    console.log(data.date)
-    return <User info={data} remove={() => removeHandler(i)} key={i}></User>;
-  });
   return (
     <>
-      <Add_New Users={Users} setUsers={setUsers}></Add_New>
-      <Filteryear setYear={setyear} ></Filteryear>
-      {expenseItems}
-      
-      {/* <Expenseform add={addExpenseHandler}></Expenseform> */}
+    <Expensense Users={Users} setUsers={setUsers}  removeHandler={removeHandler}></Expensense>
     </>
   );
 };

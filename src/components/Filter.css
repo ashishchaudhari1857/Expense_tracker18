@@ -1,0 +1,50 @@
+.container {
+    height: 5vh;
+    background-color: rgb(41, 34, 48);
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    margin-top: 1%;
+    box-shadow: 2px 2px 2px green;
+  }
+  
+  .yearBar {
+    margin-top: 0.7vw;
+    font-size: 2.5vw;
+    background-color: rgb(27, 112, 112);
+    border-radius: 30%;
+    /* margin-left:80% ; */
+  }
+  
+  @media (min-width: 1250px) {
+    .yearBar {
+      margin-top: 0;
+      font-size: 1.5vw;
+    }  
+    .text_area{
+     font-size: 1vw;
+     color: red;
+    }
+  
+     
+  }
+  .text_area {
+    color: white;
+    justify-content: end;
+    font-size: 2.5vw;
+  }
+  
+  @media (min-width: 1250px) {
+     .yearBar {
+       margin-top: 0;
+       font-size: 1.5vw;
+     }  
+     .text_area{
+      font-size: 1.5vw;
+     
+     }
+   
+      
+   }
